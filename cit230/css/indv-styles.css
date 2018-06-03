@@ -1,0 +1,21 @@
+body{
+    background: #A9D0F5; /* fallback for old browsers */
+    background: -webkit-linear-gradient(top, #A9D0F5, #8DC26F);
+    background: -moz-linear-gradient(top, #A9D0F5, #8DC26F);
+    background: -o-linear-gradient(top, #A9D0F5, #8DC26F);
+    background: linear-gradient(to bottom, #A9D0F5, #FFFFFF);
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;}
+
+#hi{
+    background-color: aliceblue;
+}
+.h1{
+    background-color: lightblue;
+}
+.links{
+    border: blue;
+}
+footer{background-color: black;color: white;}
+p{border: black;}
