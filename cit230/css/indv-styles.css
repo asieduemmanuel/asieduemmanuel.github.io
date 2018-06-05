@@ -8,14 +8,20 @@ body{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;}
 
-#hi{
-    background-color: aliceblue;
-}
+h1{background-color: aliceblue;  }
 .h1{
-    background-color: lightblue;
+    background-color: lightblue;position: center;
 }
+head{
+    float:right;position: center;}
 .links{
     border: blue;
 }
 footer{background-color: black;color: white;}
 p{border: black;}
+ul{list-style: none;}
+li{display: inline;}
+a:hover{background-color: yellowgreen;}
+button{background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;}
