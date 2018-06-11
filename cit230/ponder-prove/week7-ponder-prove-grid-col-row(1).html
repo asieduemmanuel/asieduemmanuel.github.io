@@ -47,33 +47,32 @@
             a:link{color:#000000}        
             a:visited {color:rgb(0%,100%,0%);} 
             a:hover {background-color: white;}
-            a:active {color: rgb(0,0,255);}  	
+            a:active {color: rgb(0,0,255);}
 
-            div#left-col{position: absolute;left: 0%;margin-top: 0%;width: 15%;height: 3000%;border: solid thin blue;}
+            header{
+                grid-column: 1 / span 3;grid-row: 1;
+            }
+            nav{grid-column: 1 / span 3;grid-row: 2;}
 
-            main {margin-left: 15%;margin-top:0%;margin-right:auto;margin-top:0%; width: 70%;height: 3000%;border: solid thin blue;float: left;}
+            footer {grid-column: 1 / span 3;grid-row: 4; position: fixed;
+                bottom:0px;width: 100%}
+            .grid-container {display: grid; grid-template-areas: 'header header header''nav nav nav''left middle right''footer footer footer';}
 
-            aside{position: absolute;right:0%;margin-top: 0%;width: 15%;height: 3000%;border: solid thin blue;list-style: none;}
-
-            footer {position:fixed;
-                bottom:0px;width:100%;border: solid medium black;text-align: center;}
-
-            /*apply colors to look like ppt*/	
-            header {background-color:#9F9;} 
+            /*apply colors to look like ppt*/
+            header {background-color:#9F9;}
             nav{background-color:yellow;}
-            div#left-col{background-color:#F66;}
-            main{background-color:green;}
+            div#left-col{background-color:#F66;height: 3000px}
+            main{background-color:green;height: 3000px}
             div#right-col{background-color:green;}
-            aside{background-color:blue;}
+            aside{background-color:blue;height: 3000px}
             footer{background-color:#0CF;}
-            body {background-color:#DDF; border: 1px solid blue; margin-top:-1em;}			
-
+            body {background-color:#DDF; border: 1px solid blue; margin-top:-1em;}
             /*<link href="../css/w9-css.css" rel="stylesheet" type="text/css" >*/
         </style>    
     </head>
    
     <body>
-       
+       <div class="grid-container">
         <header>
             <h1 class="dropcap">The Rock Market</h1>
             <p>(insert banner image)</p>
@@ -121,6 +120,7 @@
                 <li class="fs24pt"><a href="week4-ponder-prove-anchors.html#ho">Hours of Operation</a></li>
             </ul>
         </footer>
-   
+       </div>
     </body>
+
 </html>

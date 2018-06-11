@@ -1,4 +1,4 @@
-body{
+body{margin: 0;
     background: #A9D0F5; /* fallback for old browsers */
     background: -webkit-linear-gradient(top, #A9D0F5, #8DC26F);
     background: -moz-linear-gradient(top, #A9D0F5, #8DC26F);
@@ -6,22 +6,53 @@ body{
     background: linear-gradient(to bottom, #A9D0F5, #FFFFFF);
     font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;}
-
-h1{background-color: aliceblue;  }
-.h1{
-    background-color: lightblue;position: center;
-}
-head{
-    float:right;position: center;}
+    -moz-osx-font-smoothing: grayscale;
+height: 1000px}
+header {border:solid thin;}
+h1{text-align:center;}
+h2{text-align: center;font-family: cursive;}
 .links{
     border: blue;
 }
-footer{background-color: black;color: white;}
-p{border: black;}
+footer {grid-column: 1 / span 3;grid-row: 4; position: fixed;bottom:0;width: 100%; background-color:lightslategray;}
+footer li{margin-right: 15%}
+p{border: black;top: 1%}
 ul{list-style: none;}
-li{display: inline;}
-a:hover{background-color: yellowgreen;}
-button{background-color: white;
-    color: black;
-    border: 2px solid #4CAF50;}
+li{display: inline;padding:1em;}
+a:hover{background-color: yellowgreen;text-decoration: none;}
+button{background-color: white;color: black;border: 2px solid #4CAF50;}
+#tabs{position: absolute;right:1%;
+    top: 0;}
+#tab1,#tab2,#tab3,#tab4,#tab5{background-color: lightgreen;float: right;height: 30px;text-decoration-style: solid;margin-right: 10px}
+#th{position:absolute;font-style: italic;right: 40%;}
+
+.left-col:after {
+    content: "";
+    display: table;
+    clear: both;border:thin black}
+.chat {
+    float: left;
+    width: 15%;
+    padding: 10px;
+    height: 2000px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLMIMOx8_INBA83fYDQyK5psWv6OrDzUGsNf1loij02orSOq9G");text-decoration: white;
+}
+.chat1{
+    float: left;
+    width:66.7%;
+    padding: 10px;
+    height: 2000px;background-color:white;}
+.chat2{
+    float: right;
+    width: 15%;
+    height: 2000px;background-color:rosybrown;background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIR58YwTG_QPCsnvboDW-ubK6t4KFIHi-kq2nbhM-15c9371qDLg")}
+#im3{position: absolute; right: 20%}
+#im5{position: absolute; right: 20%}
+#im1{position: absolute; right: 20%}
+{position: absolute; right: 20%}
+#cont{border: solid thick;height: 1000%;}
+#cont1{position: absolute;margin-top: 20%;margin-left: 20%;border: solid thick;}
+#mini{border: solid thin;text-align: right;}
+
+
+
