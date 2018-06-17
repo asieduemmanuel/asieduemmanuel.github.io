@@ -23,8 +23,8 @@ a:hover{background-color: yellowgreen;text-decoration: none;}
 button{background-color: white;color: black;border: 2px solid #4CAF50;}
 #tabs{position: absolute;right:1%;
     top: 0;}
-#tab1,#tab2,#tab3,#tab4,#tab5{background-color: lightgreen;float: right;height: 30px;text-decoration-style: solid;margin-right: 10px}
-#th{position:absolute;font-style: italic;right: 40%;}
+
+#th{position:absolute;font-style: italic;right: 20%;}
 
 .left-col:after {
     content: "";
@@ -32,27 +32,63 @@ button{background-color: white;color: black;border: 2px solid #4CAF50;}
     clear: both;border:thin black}
 .chat {
     float: left;
-    width: 15%;
+    width: 9%;
     padding: 10px;
     height: 2000px;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLMIMOx8_INBA83fYDQyK5psWv6OrDzUGsNf1loij02orSOq9G");text-decoration: white;
 }
 .chat1{
     float: left;
-    width:66.7%;
+    width:72.7%;
     padding: 10px;
-    height: 2000px;background-color:white;}
+    height: 2000px;
+    background-color: lightyellow;}
 .chat2{
     float: right;
     width: 15%;
-    height: 2000px;background-color:rosybrown;background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIR58YwTG_QPCsnvboDW-ubK6t4KFIHi-kq2nbhM-15c9371qDLg")}
+    height: 2000px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIR58YwTG_QPCsnvboDW-ubK6t4KFIHi-kq2nbhM-15c9371qDLg");
+    background-repeat: no-repeat}
+iframe,audio{position: absolute;top: 30%;right:1%}
+audio{position: absolute;top: 70%;right:0}
 #im3{position: absolute; right: 20%}
 #im5{position: absolute; right: 20%}
 #im1{position: absolute; right: 20%}
-{position: absolute; right: 20%}
 #cont{border: solid thick;height: 1000%;}
 #cont1{position: absolute;margin-top: 20%;margin-left: 20%;border: solid thick;}
 #mini{border: solid thin;text-align: right;}
+video{position: absolute;right: 30%;top: 29%;left:24%}
+#INT{position: absolute;top: 18%;right:45%;font-size: 40px;font-style: italic }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;}
 
 
 
