@@ -43,6 +43,7 @@ button{background-color: white;color: black;border: 2px solid #4CAF50;}
     padding: 10px;
     height: 2000px;
     background-color: lightyellow;}
+
 .chat2{
     float: right;
     width: 15%;
@@ -89,6 +90,40 @@ video{position: absolute;right: 30%;top: 29%;left:24%}
 
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;}
+
+@media screen and (max-width: 320px) {
+    div .chat1{
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    header h1, h2 {
+        display: none;
+    }
+}
+@media screen and (max-width: 320px) {
+    div .chat2, .chat{
+        width:15%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    div#left-col {
+        background-color: blue
+    }
+}
+@media screen and (max-width: 350px) {
+    .dropdown a {
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    header {
+        float: none;
+        width: 100%;
+    }
+}
 
 
 
