@@ -1,0 +1,40 @@
+body{height: 910px}
+header{height: 90px;background-color: black}
+img{ right: 87%}
+header h1{position: absolute;right: 60%; left: 12%; font-size: 15px;top: 5%;color: yellow;}
+header #m1{ margin-top: -4%; float: right;margin-right: 30%; }
+#m2{margin-top: -4%;float: right;right: 90%;margin-right: 5%}
+section{height: 600px; background-image: url("indv-website/jumbotron.jpg") }
+section h2{text-align: center;font-size: 50px;color: yellow}
+section p{text-align: center;}
+#b1{float: right;margin-right: 8%;margin-top: 12%;border-radius: 19%;font-size: 30px;cursor: pointer;background-color: yellow;}
+#b2{float: right;margin-right: 38%;margin-top: 12%; border-radius: 12px; font-size: 30px;cursor: pointer;background-color: red;}
+footer{height: 190px; background-color:black;}
+footer p{color: yellow}
+a{top: 110%;right: 80%;color: yellow}
+#c1{position: absolute;right: 60%;top: 108%; color: yellow}
+#c2{position: absolute;right: 40%;top: 108%;color: yellow;}
+#c3{
+    position:absolute;right: 20%;top: 108%;}
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    right: 80%;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    height: 12%;
+}

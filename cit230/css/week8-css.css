@@ -7,7 +7,7 @@ nav ol#rocks li {display:inline;padding:1em;}
 nav ul li {display:list-item;}
 #left-col ul li{list-style-type: hiragana;}
 main b{color:red;font-size:36px;margin-left:50px;}
-main img {height: 10%; width: 10%}
+main figure {height: 10%; width: 10%}
 
 footer {color:rgb(0%,100%,0%);}
 footer ul{margin-top:0;}

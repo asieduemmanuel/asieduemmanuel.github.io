@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>ETHERAFRICAN</title>
+    <link href="../../asieduemmanuel.github.io/cit230/css/indv-styles.css" rel="stylesheet" type="text/css" >
+    <script type="text/javascript" src="../cit230/css/my.json"></script>
+<script>
+    function initialize() {
+
+        let mapOptions = {
+            zoom: 4,
+            center: new google.maps.LatLng(66.02219, 12.63376)
+        };
+
+        map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+        for (let i = 0; i < json.length; i++) {
+
+            let obj = json[i];
+
+            let marker = new google.maps.Marker({
+                position: new google.maps.LatLng(obj.latitude, obj.longitude),
+                map: map,
+                title: obj.title
+
+            });
+
+
+            let clicker = addClicker(marker, obj.title);
+        }
+
+
+        function addClicker(marker, content) {
+            google.maps.event.addListener(marker, 'click', function () {
+
+                if (infowindow) {
+                    infowindow.close();
+                }
+                infowindow = new google.maps.InfoWindow({content: content});
+                infowindow.open(map, marker);
+
+            });
+        }
+
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    }
+</script>
+</head>
+
+<body>
+<header>
+    <h1>ETHERAFRICAN</h1>
+    <h2>YOUR HOME OF KENTE AND BEADS</h2>
+</header>
+<section class="topnav">
+<div class="dropdown">
+    <button class="dropbtn">PRODUCT</button>
+    <div class="dropdown-content">
+        <a href="Kente.html">KENTE FABRIC</a>
+        <a href="Beads.html">BEADS and OTHERS</a>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">SERVICES</button>
+    <div class="dropdown-content">
+        <a href="door.html">Door-to-Door</a>
+        <a href="expedite.html">Expedite</a>
+        <a href="meet-up.html">Meet-Up</a>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">HOME</button>
+    <div class="dropdown-content">
+        <a href="../index.html">HOME</a>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">CONTACT</button>
+    <div class="dropdown-content">
+        <a href="https://www.linkedin.com/feed/">Chat with Us</a>
+    </div>
+</div>
+<div class="dropdown">
+    <button class="dropbtn">CIT230-LINKS</button>
+    <div class="dropdown-content">
+        <a href="../cit230-links.html">CIT230-LINKSs</a>
+    </div>
+</div>
+</section>
+<nav id="mini">
+    <ul>
+    <li><a href="ceo.html">About the CEO of EtherAfrican</a></li>
+    <li><a href="#emma">Show me Emmanuel Agyare</a></li>
+    </ul>
+</nav>
+
+<div class="left-col">
+    <div class="chat"><a href="https://www.linkedin.com/feed/">Chat with Us</a></div>
+    <div class="chat1">
+    <p> This is a company the provides goods and services to all values customers.<br>  It was established in 2017 and finally brought up and running in 2018. The company is founded in Accra-Ghana by <strong id="emma">Emmanuel Agyare</strong> and supported by James Abuye, Edward Otoo, Jude Odoom and Lydia Ogedemgbe.<br> EtherAfrican is an African fashion, commerce and cloud computing company based in Accra-Ghana. The EtherAfrican.com website started as an online block post and later diversified to sell specific African products like apparel, furniture, food, toys, and jewelry and is the world's largest provider of African products EtherAfrican also sells certain lowend products under its in-house brand Etherfabs<br> EtherAfrican also offers international shipping of some of its products to certain other countries.   EtherAfrican is an online auction and shopping website in which people and businesses with the specified products and preference buy and sell a wide variety of goods and services worldwide.<br> The website is free to use for buyers, and sellers are charged a fee for listing items after a limited number of free listings, and again when those items are sold.<br>   EtherAfrican is continually created and updated, with articles, pictures of products with historic events appearing within than months or years. Because everybody can help improve it,<br> EtherAfrican has become more specific than any other online shop. In addition to quantity, its contributors work on improving quality as well. Wikipedia is a work-in-progress, with articles about specific products in various stages of completion. As articles develop, they tend to become more comprehensive and adds value and balanced to the item and gives you a reason to buy them. Quality also improves over time as reviews and feedbacks are taken into consideration. Awareness of this helps the reader and buyer to obtain valid information about a specific product.</p>
+    </div>
+    <div class="chat2"><p>ADVERTISEMENT</p></div>
+
+    <div id = "map"></div>
+
+
+    <script src = "https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+</div>
+<footer>
+    <ul>
+        <li>copyright Emmanuel Agyare</li>
+        <li>Facebook</li>
+        <li>Linkedin</li>
+        <li>twitter</li>
+    </ul>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "indv-website",
+  "version": "0.0.1",
+  "dependencies": {
+    
+  }
+}
+var json = [
+  {
+    "title": "Stockholm",
+    "lat": 59.3,
+    "lng": 18.1,
+    "description": "Stockholm is the capital and the largest city of Sweden and constitutes the most populated urban area in Scandinavia with a population of 2.1 million in the metropolitan area (2010)"
+  },
