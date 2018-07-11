@@ -1,18 +1,18 @@
 [{
   "title": "Accra",
-  "lat": 59.3,
-  "lng": 18.1,
-  "description": "Accram is the capital city of Ghana and constitutes the most populated urban area in Ghana)"
+  "Lat": "59.3",
+  "Lng": "18.1",
+  "description": "Accra is the capital city of Ghana and constitutes the most populated urban area in Ghana)"
 },
   {
-  "title": "Koforidua",
-  "lat": 59.9,
-  "lng": 10.8,
-  "description": "Koforidua is a municipality, and the capital of the Eastern Region "
+    "title": "Koforidua",
+    "Lat": "59.9",
+    "Lng": "10.8",
+    "description": "Koforidua is a municipality, and the capital of the Eastern Region "
 },
-  {"title": "Cape Coast",
-  "lat": 59.9,
-  "lng": 10.8,
-  "description": "Cape Coast is a municipality, and the capital of the Central Region."
-  }
-]
+  {
+    "title": "Cape Coast",
+    "Lat": 59.9,
+    "Lng": 10.8,
+    "description": "Cape Coast is a municipality, and the capital of the Central Region."
+  }]

@@ -7,7 +7,7 @@ header #m1{ margin-top: -4%; float: right;margin-right: 30%; }
 section{height: 600px; background-image: url("indv-website/jumbotron.jpg") }
 section h2{text-align: center;font-size: 50px;color: yellow}
 section p{text-align: center;}
-#b1{float: right;margin-right: 8%;margin-top: 12%;border-radius: 19%;font-size: 30px;cursor: pointer;background-color: yellow;}
+#b1{float: right;margin-right: 8%;margin-top: 12%;border-radius: 12px;font-size: 30px;cursor: pointer;background-color: yellow;}
 #b2{float: right;margin-right: 38%;margin-top: 12%; border-radius: 12px; font-size: 30px;cursor: pointer;background-color: red;}
 footer{height: 190px; background-color:black;}
 footer p{color: yellow}
@@ -36,5 +36,21 @@ div.gallery img {
 div.desc {
     padding: 15px;
     text-align: center;
-    height: 12%;
+    height: 19%;
+    word-wrap:break-word ;
+    color: lightblue;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 480px) {
+    header button {
+        float: none;
+        width: 30%;
+    }
+}
+@media screen and (max-width: 480px) {
+    header h1 {
+        float: none;
+        width: 10%;
+    }
 }
